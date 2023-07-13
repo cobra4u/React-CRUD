@@ -6,16 +6,16 @@ const Read = () => {
   const [data, setData] = useState([]);
   const [tabledark, setTableDark] = useState("");
 
-  function getData() {
-    axios
+  async function getData() {
+    await axios
       .get("https://64ab046b0c6d844abedf1755.mockapi.io/CRUD")
       .then((res) => {
         setData(res.data);
       });
   }
 
-  function handleDelete(id) {
-    axios
+  async function handleDelete(id) {
+    await axios
       .delete(`https://64ab046b0c6d844abedf1755.mockapi.io/CRUD/${id}`)
       .then(() => {
         getData();

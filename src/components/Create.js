@@ -10,10 +10,10 @@ const [notes, setNotes] = useState("");
 const history = useNavigate();
 // const header = {'Access-Control-Allow-Origin': '*'};
 
-const handleSubmit = (e) => {
+const handleSubmit = async(e) => {
   console.log("clicked");
      e.preventDefault();
-    axios.post("https://64ab046b0c6d844abedf1755.mockapi.io/CRUD", {
+    await axios.post("https://64ab046b0c6d844abedf1755.mockapi.io/CRUD", {
     task: task,
     notes: notes,
     
