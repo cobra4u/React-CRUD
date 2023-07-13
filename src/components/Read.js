@@ -40,18 +40,12 @@ const Read = () => {
           type="checkbox"
           onClick={() => {
             
-            if (tabledark === "table-dark") {
+            if (tabledark === "table-dark") 
                 setTableDark("")
-                return (
-                  <h1>Dark Mode</h1>
-                )
-            }
-            else {
+               
+            else 
                 setTableDark("table-dark")
-                return (
-                  <h1>Light Mode</h1>
-                )
-            }
+                
           }}
         />
       </div>

@@ -31,6 +31,7 @@ const Update = () => {
 
   return (
     <>
+    <h1>UPdate</h1>
       <h2>Update</h2>
       <form>
         <div className="mb-3">
